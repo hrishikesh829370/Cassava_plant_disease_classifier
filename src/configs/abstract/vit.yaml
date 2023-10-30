@@ -1,0 +1,69 @@
+id:                             ViT
+pretrained:                     Null
+model:
+    name:                       BaseTimmModel
+    args:
+    name:                       ['vit_base_patch16_224',
+                                'vit_base_patch16_384',
+                                'vit_base_patch32_384',
+                                'vit_base_resnet26d_224',
+                                'vit_base_resnet50d_224',
+                                'vit_huge_patch16_224',
+                                'vit_huge_patch32_384',
+                                'vit_large_patch16_224',
+                                'vit_large_patch16_384',
+                                'vit_large_patch32_384',
+                                'vit_small_patch16_224',
+                                'vit_small_resnet26d_224',
+                                'vit_small_resnet50d_s3_224']
+        num_classes:            5
+        freeze_backbone:        False
+optimizer:
+    name:                       [Adam, SGD]
+    args:
+        lr:                     0.03 
+        momentum:               0.9
+        weight_decay:           0
+loss:
+    name:                       [FocalLoss, CrossEntropyLoss,BiTemperedLoss]
+    args:                       Null
+metric:
+    -   name:                   Accuracy
+        args:                   Null
+scheduler:
+    name:                       [StepLR, WarmupCosineSchedule, WarmupLinearSchedule]
+    args:
+        step_size:              15
+        gamma:                  0.2
+        last_epoch:             -1  
+dataset:
+    train:
+        name:                   LeafDataset
+        args:
+            data_dir:           data/train_images/         
+            csv_path:           lists/train.csv
+            IMG_SIZE:           224
+            is_train:           True  
+        loader:
+            name: DataLoader
+            args:
+                batch_size:     64
+                shuffle:        True
+                drop_last:      True 
+    val:
+        name:                   LeafDataset
+        args:
+            data_dir:           data/train_images/         
+            csv_path:           lists/val.csv
+            IMG_SIZE:           224
+            is_train:           False  
+        loader:
+            name: DataLoader
+            args:
+                batch_size:     64
+                shuffle:        True
+
+trainer: 
+    nepochs: 20
+    val_step: 1
+    log_step: 1
