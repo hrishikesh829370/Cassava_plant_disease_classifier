@@ -93,6 +93,22 @@ Most models used are from the [Timm library](https://github.com/rwightman/pytorc
 | resnext50_32x4 | 0.884813 | 0.880140 | 0.881748 | 0.878008 | 0.892498 | 0.883441 | 0.895  | **0.891**   |
 
 
+# Hyperparameters search using Optuna
+
+Searched for crucial parameters like learning rate, learning rate schedulers using [Optuna](https://optuna.org/) framework. 
+
+## Instruction
+
+Run [run_optuna.ipynb](run_optuna.ipynb).
+
+## Optuna visualization
+
+Optuna provides some useful insights on the searched parameters, you can visualize the study using the provided API; for instance, check the aforementioned notebook.
+
+![Importance](img/importance.png)
+![History](img/history.png)
+![Parallel_coordinate](img/coordinates.png)
+
 
 ## Next Steps
 
