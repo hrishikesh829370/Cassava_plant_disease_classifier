@@ -100,7 +100,8 @@ This project is just the beginning. In the future, I plan to:
 
 - Explore the use of Vision Transformer models like ViT and Deit for potential improvements.
 - Investigate other loss functions, such as Taylor Loss and Bi-Tempered Loss, for possible enhancements.
-- Continue refining the solution to further assist cassava farmers and promote food security in Africa.
+- Continue refining the solution to further assist cassava farmers and promote food security in the world.
+- deploying the model into a mobile application for the easy access by the farmers
 
 ## Get Involved
 
