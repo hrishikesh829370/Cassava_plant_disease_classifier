@@ -63,7 +63,8 @@ The dataset is noisy and imbalanced, making it essential to address these issues
 
 This final model is a stacked ensemble of three CNN-based models: EfficientNet, ResneXt, and Densenet. This ensemble approach enhances classification accuracy.
 
-![final_model-2](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/085bdb2a-813f-4ba6-a7cf-c7f7d5fd929c)
+![final_model-2](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/fb4e96d9-a844-4cc4-a2ee-aeb53b323caa)
+
 
 
 ### Training configuration
