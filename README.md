@@ -105,10 +105,9 @@ Run [run_optuna.ipynb](run_optuna.ipynb).
 
 Optuna provides some useful insights on the searched parameters, you can visualize the study using the provided API; for instance, check the aforementioned notebook.
 
-![Importance](img/importance.png)
-![History](img/history.png)
-![Parallel_coordinate](img/coordinates.png)
-
+![importance](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/7a574e67-9408-4925-a981-39b48c801091)
+![history](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/f85dd211-ff30-45e5-b9f2-2b5f0249c431)
+![coordinates](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/67bdefce-0ad0-4f1b-909f-a35cd3841407)
 
 ## Next Steps
 
