@@ -8,8 +8,10 @@ As the second-largest provider of carbohydrates in Africa, cassava is a key food
 This project introduces a machine learning solution to quickly identify diseases in cassava leaves, providing a tool for farmers to safeguard their crops before irreparable damage occurs. The aim is to make the process efficient, accessible, and cost-effective.
 
 ## Dataset
+![sample_images](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/4234d58b-ecaa-4566-9294-26ae1a0c6fbf)
 
 This project utilizes a dataset of 26,000 labeled cassava leaf images collected during surveys in Uganda. The dataset includes images sourced from farmers and annotated by experts at the National Crops Resources Research Institute (NaCRRI) in collaboration with the AI lab at Makerere University, Kampala. This dataset closely mirrors real-world conditions and the images farmers might need to diagnose.
+
 
 ## Disease Categories
 
@@ -56,11 +58,12 @@ The dataset is noisy and imbalanced, making it essential to address these issues
 - [x] Implement Automatic Mixed Precision  
 - [x] Write Optuna scripts for hyperparams tuning  
 
-
+##Summary
 ### Model Selection
 
 This final model is a stacked ensemble of three CNN-based models: EfficientNet, ResneXt, and Densenet. This ensemble approach enhances classification accuracy.
 
+![final_model-2](https://github.com/hrishikesh829370/Cassava_plant_disease_classifier/assets/131910887/085bdb2a-813f-4ba6-a7cf-c7f7d5fd929c)
 
 
 ### Training configuration
